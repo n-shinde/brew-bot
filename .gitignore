@@ -1,0 +1,50 @@
+# Frontend (Next.js)
+apps/web/.env.local
+apps/web/.env.development.local
+apps/web/.env.production.local
+
+# Backend (FastAPI)
+apps/api/.env
+
+# Common
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac / OS / Editor cruft
+.DS_Store
+*.swp
+.vscode/
+
+
+# Python / FastAPI backend
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+.env
+.venv/
+venv/
+.env.local
+
+# Build / packaging
+build/
+*.egg-info/
+.eggs/
+*.spec
+
+
+# Other common ignores
+.idea/
+*.bak
+*.tmp

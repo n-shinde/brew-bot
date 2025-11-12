@@ -1,0 +1,36 @@
+brewbot/
+├─ apps/
+│  ├─ web/                 # Next.js (Vercel)
+│  │  ├─ app/
+│  │  │  ├─ page.tsx
+│  │  │  ├─ layout.tsx
+│  │  │  └─ globals.css
+│  │  ├─ lib/
+│  │  │  ├─ api.ts
+│  │  │  └─ types.ts
+│  │  ├─ public/logo.svg
+│  │  ├─ package.json
+│  │  ├─ next.config.mjs
+│  │  ├─ tsconfig.json
+│  │  └─ .env.local.example
+│  └─ api/                 # FastAPI (Render)
+│     ├─ app/
+│     │  ├─ app/
+│     │  │  ├─ main.py
+│     │  │  ├─ core/
+│     │  │  │  ├─ config.py
+│     │  │  │  └─ logger.py
+│     │  │  ├─ routers/
+│     │  │  │  ├─ ingest.py
+│     │  │  │  ├─ benchmark.py
+│     │  │  │  └─ analyze.py
+│     │  │  ├─ services/
+│     │  │  │  ├─ pos_ingest.py
+│     │  │  │  ├─ competitor.py
+│     │  │  │  └─ recs.py
+│     │  │  └─ schemas/io.py
+│     ├─ requirements.txt
+│     ├─ render.yaml       # Render service blueprint (points to apps/api)
+│     └─ README.md
+├─ README.md               # Root guide: how to deploy both
+└─ LICENSE (optional)
